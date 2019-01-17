@@ -25,10 +25,8 @@ development:
 
         user: <%= ENV['DB_USERNAME'] %>
         password: <%= ENV['DB_PW'] %>
-
-        # The user's database roles.
         roles:
-          - 'dbOwner'
+            - 'dbOwner'
 
         # Change the default authentication mechanism. Valid options are: :scram,
         # :mongodb_cr, :mongodb_x509, and :plain. Note that all authentication
@@ -111,7 +109,7 @@ development:
 
     # Raise an error when performing a #find and the document is not found.
     # (default: true)
-    raise_not_found_error: true
+    raise_not_found_error: false
 
     # Raise an error when defining a scope with the same name as an
     # existing method. (default: false)
